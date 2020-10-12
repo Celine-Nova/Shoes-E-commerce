@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f6f5f5;
+
+
+}
+header{
+    background-color: #dee0e0 ;
+}
+
+#header-nav{
+    display: flex;
+    /* align-items: center; */
+}
+#header-nav li{
+    font-size: 32px;
+    list-style: none;
+    display: inline;
+    padding: 25px;
+    margin-top: 30px;
+}
+#header-nav a{
+    text-decoration: none;
+    color: black;
+}
+.logo-brand img{
+    max-height: 180px;
+    max-width: 180px;
+}
+.the-most-popular{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*position relative afin de mettre les enfants de l'element en position absolute de cet element*/
+.product{
+    display: inline-block; 
+    position: relative;
+    background-color: white;
+    margin: 20px;
+    flex-wrap: wrap;
+    
+}
+.product-price{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+.featured-news{
+    background-color: black;
+}
+#gallery-new{
+    display: flex;
+    /* width: 50%; */
+}
+
+.featured-news h2{
+    color: white;
+   
+}
+#new{
+    position: relative;
+
+}
+#img-new1{
+    height: 200px;
+    width: 50%;
+    /* position: relative; */
+}
+.article-news1{
+    float: right;
+}
+#img-new2{
+    position: absolute;
+    left: 0;
+    top: 15em;
+}
+/* .article-news2{
+    position: absolute;
+    left: 20em;
+    top: 15em;
+} */
+
+.featured-news h2, .img-new{
+    height: 200px;
+    width: 25%;
+}
+#img-new-shoe{
+    height: 400px;
+}
+
+.list-article{
+    display: flex;
+}
+.article{
+    position: relative;
+    background-color: white;
+    border-radius: 3%;
+    margin: 10px;
+}
+.article img{
+    margin-top: 30px;
+}
+.article p{
+    padding: 35px 75px 0 15px;
+}
+.author-article{
+    padding-left: 15px;
+    margin-top: 125px;
+
+}
+.article a{
+    color: red;
+    position: absolute;
+    right: 3em;
+    bottom: 3em;
+}
+footer{
+    background-color: black;
+}
