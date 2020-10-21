@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    padding: 0;
+    padding: 20px;
     background-color: #f6f5f5;
 
 
@@ -50,44 +50,29 @@ header{
 .featured-news{
     background-color: black;
 }
-#gallery-new{
-    display: flex;
-    /* width: 50%; */
-}
 
 .featured-news h2{
     color: white;
-   
-}
-#new{
-    position: relative;
-
-}
-#img-new1{
-    height: 200px;
-    width: 50%;
-    /* position: relative; */
-}
-.article-news1{
-    float: right;
-}
-#img-new2{
-    position: absolute;
-    left: 0;
-    top: 15em;
-}
-/* .article-news2{
-    position: absolute;
-    left: 20em;
-    top: 15em;
-} */
-
-.featured-news h2, .img-new{
     height: 200px;
     width: 25%;
+ }
+#container{
+    display: flex;
 }
-#img-new-shoe{
-    height: 400px;
+#container-new1{
+    width: 75%;
+}
+#gallery1, #gallery2{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.article-news{
+    width: 25%;
+    border: solid 2px white;
+    margin: 0 15px;
+  
 }
 
 .list-article{
