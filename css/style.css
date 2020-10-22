@@ -1,57 +1,96 @@
-body{
-    margin: 5px;
-    padding: 5px;
-    background-color: #f6f5f5;
-    /* width: 100%; */
+html{
+    /* width: 100vh; */
 }
-header{
+body{
+    margin: 0;
+    padding: 0;
     background-color: #dee0e0 ;
-    width: 100%;
+    overflow-x: hidden; 
+}
+/* header */
+header{
     overflow: hidden;
 }
-
+#navbar-header{
+    margin-bottom: -75px;
+    margin-top: -10px;
+    margin-left: -20px;
+  
+}
 #header-nav{
     display: flex;
-    /* align-items: center; */
 }
 #header-nav li{
     font-size: 32px;
     list-style: none;
     display: inline;
-    padding: 25px;
-    margin-top: 30px;
+    margin: 58px 30px 61px 30px;
 }
 #header-nav a{
     text-decoration: none;
     color: black;
 }
-
+.main-picture-carousel{
+    height: 800px;
+} 
 #scroll-carousel{
+    overflow-y: hidden;
     overflow-x: scroll;
     display: flex;
     scroll-snap-type: x mandatory;
-    /* margin: 0 150px; */
+   
 }
-#scroll-carousel a:first-child{
-    margin-left: -350px;
+#first-element {
+    margin-left: -250px;
+    /* max-height: 300px; */
+    
 }
-
-.the-most-popular{
+#navbar-menu{
+    position: relative;
+    left: calc(100% - 470px);
+    top: -85px;
+}
+#menu-nav{
+    display: flex;
+    background-color: #080b42;
+    width: 25%;
+}
+#menu-nav li{
+    font-size: 20px;
+    list-style: none;
+    display: inline;
+    margin: 10px;
+    /* padding: 15px; */
+    /* margin-top: 20px; */
+}
+#menu-nav li a{
+    color: white;
+    text-decoration: none;
+}
+/* corps de page */
+/* section The most popular */
+#title-most-popular{
+    /* padding-left: 50px; */
+}
+.product-list{
     display: flex;
     justify-content: space-around;
+    background-color: #e8e9ef;
+    margin-left: 150px;
+    padding-bottom: 50px;
 }
-.logo-brand img{
-    max-height: 180px;
-    max-width: 180px;
+#shop{
+    /* display: flex; */
+    justify-content: space-around;
+    padding-left: 250px;
 }
-
 /*position relative afin de mettre les enfants de l'element en position absolute de cet element*/
 .product{
-    display: inline-block; 
     position: relative;
+    display: inline-block; 
     background-color: white;
     margin: 20px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     
 }
 .product-price{
@@ -59,35 +98,55 @@ header{
     top: 1em;
     right: 1em;
 }
+/* section Featured news */
 .featured-news{
     background-color: black;
-    padding: 55px 0;
+    padding: 55px 5px;
 }
 
-.featured-news h2{
+.title-news{
     color: white;
-    height: 200px;
-    width: 25%;
- }
+   
+}
 #container{
     display: flex;
-    max-width: 100%;
+    padding-left: 15px;
 }
 #container-new1{
     width: 75%;
+    
 }
-#gallery1, #gallery2{
-    justify-content: center;
-    display: flex;
-    width: 100%;
+#img-new1{
+    /* width: calc(100% + 2); */
+    max-width: 910px;
+    
+}
+#img-new2, #img-new3{
+    max-width: 100%;
+}
+/* j'établie la argeur des elements en prenant en compte une marge de 3 et 5 em */
+.elements-gallery2{
+    width: calc((100% / 3) - (3em - 5em / 3));
 }
 
-.article-news{
-    width: 25%;
-    border: solid 2px white;
-    margin: 0 15px;
-  
+#gallery1, #gallery2{
+    display: flex;
+    /* justify-content: space-around; */
+ 
 }
+.article-news{
+    background-color: #080b42;
+    min-width: 445px;
+    margin: 0 15px;
+}
+
+/* section popular brands */
+.logo-brand{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* section our reviews */
 .list-article{
     display: flex;
 }
@@ -114,6 +173,7 @@ header{
     right: 3em;
     bottom: 3em;
 }
+/* footer */
 footer{
     background-color: black;
 }

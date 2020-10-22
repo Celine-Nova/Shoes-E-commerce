@@ -7,8 +7,9 @@
     <title>Ecommerce</title>
 </head>
 <body>
+    <!--header-->
     <header>
-        <nav>
+        <nav id="navbar-header">
             <ul id="header-nav">
                 <a href="#"><img src="pictures/logo-accueil.png" alt=""></a>
                 <li> <a href="#"> Products</a></li>
@@ -19,42 +20,52 @@
         </nav>
         <section id="carousel">
             <div id="scroll-carousel">
-                <a href="#"><img src="pictures/header/carousel/shoe.png" alt=""> </a>
-                <a href="#"><img src="pictures/header/carousel/carousel.png" alt=""> </a>
-                <a href="#"><img src="pictures/header/carousel/shoe1-carousel.png" alt=""> </a>
+                <a href="#" id="first-element"><img  src="pictures/header/carousel/shoe.png" alt=""> </a>
+                <a href="#"><img class="main-picture-carousel" src="pictures/header/carousel/carousel.png" alt=""> </a>
+                <a href="#"><img class="main-picture-carousel" src="pictures/header/carousel/shoe1-carousel.png" alt=""> </a>
             </div>                
         </section>
+        <nav id="navbar-menu"> 
+            <ul id="menu-nav">
+                <li> <a href="#"> Products</a></li>
+                <li> <a href="#"> Shipping</a></li>
+                <li> <a href="#"> Articles</a></li>
+                <li> <a href="#"> About-us</a></li>
+                <li> <a href="#"> Menu</a></li>
+            </ul>
+        </nav>
 
     </header>
     <main>
+        <!--section The most popular -->
         <section class="the-most-popular">
-            <img src="pictures/the-most-popular.png" alt="titre the most popular">
-            <div id="shop">
-             <!--   <div class="product-list"> -->
-                    <div class="product">
-                        <h2 class="product-name">Adidas</h2>
-                        <p class="product-model">Falcon shoes</p>
-                        <a href="#"><img src="pictures/popular/adidas-shoe.png" alt="photo "> </a>
-                        <div class="product-price">127 &#8364;</div>
-                        <p class="product-description">For Women Made in China, 2018</p>
-                    </div> 
-                    <div class="product"> 
-                        <h2 class="product-name">Nike</h2>
-                        <p class="product-model">Air Max 270</p>
-                        <a href="#"><img src="pictures/popular/nike-shoe.png" alt="photo du produit"> </a>
-                        <div class="product-price">142 &#8364;</div>
-                        <p class="product-description">For Men Made in China, 2017</p>
-                    </div>
-                    <div class="product"> 
-                        <h2 class="product-name">Nike</h2>
-                        <p class="product-model">M2k techno</p>
-                        <a href="#"><img src="pictures/popular/nike-shoe2.png" alt="photo du produit"> </a>
-                        <div class="product-price">127 &#8364;</div>
-                        <p class="product-description">For Women Made in China, 2018</p>
-                    </div>
-                <!--</div>-->
-                <div class="scroll">
-                    <img src="pictures/scroll.png" alt="">
+            <div class="product-list"> 
+                <img src="pictures/the-most-popular.png "id ="title-most-popular" alt="titre the most popular">
+                <div id="shop">
+                        <div class="product">
+                            <h2 class="product-name">Adidas</h2>
+                            <p class="product-model">Falcon shoes</p>
+                            <a href="#"><img src="pictures/popular/adidas-shoe.png" alt="photo "> </a>
+                            <div class="product-price">127 &#8364;</div>
+                            <p class="product-description">For Women Made in China, 2018</p>
+                        </div> 
+                        <div class="product"> 
+                            <h2 class="product-name">Nike</h2>
+                            <p class="product-model">Air Max 270</p>
+                            <a href="#"><img src="pictures/popular/nike-shoe.png" alt="photo du produit"> </a>
+                            <div class="product-price">142 &#8364;</div>
+                            <p class="product-description">For Men Made in China, 2017</p>
+                        </div>
+                        <div class="product"> 
+                            <h2 class="product-name">Nike</h2>
+                            <p class="product-model">M2k techno</p>
+                            <a href="#"><img src="pictures/popular/nike-shoe2.png" alt="photo du produit"> </a>
+                            <div class="product-price">127 &#8364;</div>
+                            <p class="product-description">For Women Made in China, 2018</p>
+                        </div>
+                        <div class="scroll">
+                            <img src="pictures/scroll.png" alt="">
+                        </div>
                 </div>
             </div>   
         </section>
@@ -69,17 +80,15 @@
                         <a href=""> <h2 class="title-news">/// Where is MY AIR ?</h2> </a>
                         </div>
                     </div>
-
                     <div id="gallery2">
-                        <a href="#"><img id="img-new2"src="pictures/news/news2.png" alt="photo article"> </a>
+                        <a href="#" class="elements-gallery2"><img id="img-new2"src="pictures/news/news2.png" alt="photo article"> </a>
                     
-                        <div class="article-news">
-                            <a href=""> <h2 class="title-news">/// 50% BLACK FRIDAY ?</h2> </a>
+                        <div class="elements-gallery2 article-news">
+                            <a href="" > <h2 class="title-news">/// 50% BLACK FRIDAY ?</h2> </a>
                         </div>
                     
-                        <a href="#"><img id="img-new3" src="pictures/news/news3.png" alt="photo article"> </a>
+                        <a href="#" class="elements-gallery2"><img id="img-new3" src="pictures/news/news3.png" alt="photo article"> </a>
                     </div>    
-                
                 </div>
                 <div id="container-new2">
                     <div>
@@ -88,7 +97,7 @@
                 </div>
             </div>
         </section>
-
+        <!--section popular brands -->
         <section class="brand">
             <img src="pictures/popular-brand.png" alt="">
             <div class="logo-brand">
@@ -99,7 +108,7 @@
             </div>
             <img src="pictures/scroll2.png" alt="photo du scroll">
         </section>
-
+        <!--section our reviews -->
         <section class="our-review">
             <img src="pictures/our-review.png" alt="photo titre de la section">
             <div class="list-article">
@@ -136,18 +145,10 @@
         </section>
 
     </main>
+    <!--footer -->
     <footer>
          <img src="pictures/banner-footer.png" alt="">
-         <nav>
-            <ul id="footer          -nav">
-                <a href="#"><img src="pictures/logo-accueil.png" alt=""></a>
-                <li> <a href="#"> Products</a></li>
-                <li> <a href="#"> Shipping</a></li>
-                <li> <a href="#"> Articles</a></li>
-                <li> <a href="#"> About-us</a></li>
-                <li> <a href="#"> Menu</a></li>
-            </ul>
-        </nav>
+        
     </footer>
 </body>
-</html>
+</html> 
