@@ -54,6 +54,7 @@ header{
     display: flex;
     background-color: #080b42;
     width: 25%;
+    border-top-left-radius: 35%;
 }
 #menu-nav li{
     font-size: 20px;
@@ -124,7 +125,7 @@ header{
 #img-new2, #img-new3{
     max-width: 100%;
 }
-/* j'établie la argeur des elements en prenant en compte une marge de 3 et 5 em */
+/* j'établie la largeur des elements en prenant en compte une marge de 3 et 5 em */
 .elements-gallery2{
     width: calc((100% / 3) - (3em - 5em / 3));
 }
@@ -172,6 +173,10 @@ header{
     position: absolute;
     right: 3em;
     bottom: 3em;
+}
+.list-article :first-child{
+    background-color: black;
+    color: white;
 }
 /* footer */
 footer{
