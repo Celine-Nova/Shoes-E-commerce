@@ -1,4 +1,5 @@
-Cours HTML5 avançé
-Jour 1 :
+# Shoes E-commerce
+## HTML5 et CSS3
 Representer la maquette xd shoes e-commerce
-- page 1 web html5 (finir le css)
+- Page d'accueil :
+![home](home_desktop.png)
